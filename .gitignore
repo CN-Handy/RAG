@@ -1,0 +1,39 @@
+# 敏感信息
+.env
+
+# Claude Code 内部工程指导（不对外公开）
+CLAUDE.md
+
+# 模型文件（体积大，下载后放入 models/BAAI/ 对应子目录）
+models/BAAI/bge-small-zh-v1.5/*
+!models/BAAI/bge-small-zh-v1.5/.gitkeep
+models/BAAI/bge-reranker-base/*
+!models/BAAI/bge-reranker-base/.gitkeep
+
+# 运行时数据
+upload_files/*
+!upload_files/.gitkeep
+rag.db
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# 个人文档（面试材料等，不上传 GitHub）
+docs/
+
+# macOS
+.DS_Store
